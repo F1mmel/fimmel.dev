@@ -1,0 +1,63 @@
+.container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #c4c4c4;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background-color: #333;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 12px 11px 15px 5px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced out */
+    height: 100%;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 12px 11px 15px 5px rgba(0,0,0,0.6);
+  }
+  
+  .repoLink {
+    text-decoration: none;
+    color: #5391d7;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .repoLink:hover {
+    text-decoration: underline;
+  }
+  
+  .repoName {
+    margin: 0;
+  }
+  
+  .repoDescription {
+    margin-top: 0.5rem;
+    color: #c4c4c4;
+    font-size: 0.9rem;
+    flex-grow: 1; /* Ensures description grows to take available space */
+  }
+  
+  .projectDetails {
+    margin-top: auto; /* Pushes the details to the bottom */
+    font-size: 0.9rem;
+    color: #c4c4c4;
+  }
+  

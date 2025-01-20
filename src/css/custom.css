@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../static/fonts/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url('../../static/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../../static/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+  --bg-url: url(../../static/img/website_background.png);
+  --tp-white: #c6c6c4;
+  --tp-ui-font: 'Quicksand';
+  --tp-hilight-color: #BF9100;
+}
+
+body {
+  font-family: var(--tp-ui-font)
+}
+
+.font-calamity {
+  font-family: var(--tp-ui-font);
+}
+
+h1,
+h2,
+h4,
+.navbar__title,
+.footer__title {
+  font-family: var(--tp-ui-font);
+}
+
+html[data-theme='dark'] {
+  --ifm-color-primary: #BF9100;
+  --ifm-color-primary-dark: #BF9100;
+  --ifm-color-primary-darker: #BF9100;
+  --ifm-color-primary-darkest: #BF9100;
+  --ifm-color-primary-light: #BF9100;
+  --ifm-color-primary-lighter: #BF9100;
+  --ifm-color-primary-lightest: #BF9100;
+  background: #111111;
+}
+
+:where([data-theme='dark']) {
+  --docusaurus-highlighted-code-line-bg: #282828 !important;
+}
+
+/* prevent the logo from showing up twice before rehydration */
+img[class^='themedImage--light'],
+img[class*=' themedImage--light'] {
+  display: none;
+}
+
+.navbar {
+  background: rgba(100, 111, 130, 0.2);
+  background-blend-mode: lighten;
+  /*background-image: url(../../static/img/website-footer-nav-bar.png);*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background: rgb(28 27 27);
+}
+
+.footer {
+  background: rgba(100, 111, 130, 0.2);
+  background-blend-mode: lighten;
+  /*background-image: url(../../static/img/website-footer-nav-bar.png);*/
+  background: rgba(100, 111, 130, 0.0);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.card {
+  background: rgba(53, 55, 56, 0.8);
+  background-blend-mode: lighten;
+}
+
+.text-hilight {
+  color: var(--tp-hilight-color);
+  font-weight: bold;
+  font-family: 'PoppinsBold';
+}
+
+html.container-tp-background {
+  background-image: var(--bg-url);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+html.container-tp-background .navbar {
+  background: rgba(48, 56, 70, 0.0);
+}
+
+html.container-tp-background .footer {
+  background: rgba(100, 111, 130, 0.2);
+}
+
+.aa-DetachedSearchButtonPlaceholder {
+  display: none;
+}
+
+.markdown>h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffffff3f;
+}
+.searchBox_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Search-styles-module {
+  display: none;
+}
+@media (max-width: 996px) {
+
+
+  .navbar__logo {
+    display: none;
+  }
+
+  .footer__col:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.button {
+  transition: transform 0.2s;
+  box-shadow: 12px 11px 15px 5px rgba(0,0,0,0.32);
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 12px 11px 15px 5px rgba(0,0,0,0.6);
+}
+
+#__docusaurus{
+  background-image: url(../../static/img/website-footer-nav-bar.png);
+  background-attachment: fixed;
+}
+
+img:not(.navbar__logo img) {
+  box-shadow: 12px 11px 15px 5px rgba(0, 0, 0, 0.32);
+}
+
+.hero__title {
+  color: var(--tp-hilight-color);
+  font-weight: bold;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.51);
+  font-family: 'PoppinsBold';
+}
+
+.hero__subtitle {
+  color: var(--tp-white);
+}
+.text-center {
+  text-align: center;
+}
+
+.videoContainer {
+  max-width: 1500px;
+  height: 756px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.yt-lite {
+  background-size: cover !important; /* Streckt das Bild, um den gesamten Container zu füllen */
+  background-position: center !important; /* Zentriert das Bild */
+  height: 100% !important; /* Falls nötig, erzwinge die volle Höhe */
+  width: 100% !important; /* Falls nötig, erzwinge die volle Breite */
+  aspect-ratio: unset !important; /* Deaktiviere feste Aspect Ratio */
+}
+
+
+.lty-playbtn {
+  box-shadow: 12px 11px 15px 5px rgba(0,0,0,0.32);
+}
+
+.yt-lite {
+  box-shadow: 12px 11px 15px 5px rgba(0,0,0,0.32);
+}
+
+.video-js {
+  max-width: 1500px !important;
+  height: -webkit-fill-available !important;
+  height: 724px !important;
+  width: auto !important;;
+  display: block !important;
+  box-shadow: 12px 11px 15px 5px rgba(0,0,0,0.32);
+}
+
+.vjs-poster{
+  scale: 1.005;
+}
